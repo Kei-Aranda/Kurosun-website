@@ -142,7 +142,8 @@ body {
 }
 
 .seccion2 {
-    display: inline
+    display: inline;
+    margin: 20px;
 }
 
 .seccion2 h2 {
@@ -161,6 +162,7 @@ section {
     padding: 0 40px ;
     align-items: center;
     color: aliceblue;	
+    margin: 20px;
 }
 
 section h2 {
