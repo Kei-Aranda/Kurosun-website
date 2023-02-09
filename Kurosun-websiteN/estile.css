@@ -13,21 +13,22 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: black;
+    color: aliceblue;
 }
 
 .main-container {
-    color: aliceblue;
+
 }
 
-a {
-    color: aliceblue;
+.nav{
     transition: color 0.4s ease-in-out;
+    color: aliceblue;
 }
 
-/*a:hover {
-    color: black;
-    background-color: aliceblue;
-}*/
+.nav:hover {
+    color: grey;
+
+}
 
 /* MENU */
 
@@ -59,14 +60,13 @@ a {
     animation-timing-function: ease-in-out;
 }
 
-
 .menu .logo img {
     animation-name: opening-logo;
-    animation-duration: 1.5s;
+    animation-duration: 1.4s;
     animation-timing-function: ease-in-out;
 }
 
-/* MENU MOBILE */
+/* MENU MOBILE 
 
 .menu-mobile {
     display: none;
@@ -114,7 +114,7 @@ a {
     display: block;
     padding: 10px  ;
 }
-
+ */
 
 
 @keyframes opening-logo {
@@ -129,14 +129,38 @@ a {
 
 /* SECCIONES*/
 
+.seccion1 {
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px ;
+    align-items: center;
+    color: aliceblue;
+    animation-name: opening-logo;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.seccion2 {
+    display: inline
+}
+
+.seccion2 h2 {
+    text-align: center;
+}
+
+.seccion2 p {
+    font-size: 25px;
+    text-align: center;
+}
+
 section {
     height: 650px;
     display: flex;
     justify-content: space-evenly;
     padding: 0 40px ;
     align-items: center;
-    color: aliceblue;
-	
+    color: aliceblue;	
 }
 
 section h2 {
