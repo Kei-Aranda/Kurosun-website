@@ -8,29 +8,38 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: black;
+    color: aliceblue;
 }
 
 .main-container {
-    color: aliceblue;
+
 }
 
-a {
-    color: aliceblue;
+.nav{
     transition: color 0.4s ease-in-out;
+    color: aliceblue;
 }
 
+.nav:hover {
+    color: grey;
+
+}
 
 /* MENU */
 
 .menu {
     text-align: center;
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
     margin: 100px auto 0 auto;
     width: 70%;
     align-items: center;
@@ -43,8 +52,8 @@ a {
 .menu ul {
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-content: space-around;
     gap: 30px;
     font-size: 1.9rem;
 }
@@ -55,14 +64,13 @@ a {
     animation-timing-function: ease-in-out;
 }
 
-
 .menu .logo img {
     animation-name: opening-logo;
-    animation-duration: 1.5s;
+    animation-duration: 1.4s;
     animation-timing-function: ease-in-out;
 }
 
-/* MENU MOBILE */
+/* MENU MOBILE 
 
 .menu-mobile {
     display: none;
@@ -110,7 +118,7 @@ a {
     display: block;
     padding: 10px  ;
 }
-
+ */
 
 
 @keyframes opening-logo {
@@ -125,14 +133,56 @@ a {
 
 /* SECCIONES*/
 
-section {
-    height: 650px;
+.seccion-home {
+    padding: 1rem;
+    height: 75vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.seccion1 {
+    height: 300px;
     display: flex;
     justify-content: space-evenly;
     padding: 0 40px ;
     align-items: center;
     color: aliceblue;
-	
+    animation-name: opening-logo;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+}
+.secciones {
+    padding: 1rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+  }
+
+/* 
+  h1  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+  }
+
+/* snmjnvdfkjv */
+
+
+
+section {
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px ;
+    align-items:center;
+    color: aliceblue;	
+    margin: 20px;
 }
 
 section h2 {
@@ -162,8 +212,6 @@ section img {
         display: block;
     }
 }
-
-
 
 .about-text{
 color: rgb(172, 172, 172);
@@ -226,6 +274,129 @@ font-size: 20px;
 .btn-acordeon{
     display: none;
 }
+
+
+/*       BUY       
+
+
+.container-card {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+    
+}
+
+.container-card {
+	min-width: 700px;
+	min-height: 350px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 3.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 50px 50px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.content {
+	transform: translatez(70px) scale(0.8);
+	line-height: 1.5em;
+}
+.content h1 {
+	position: relative;
+    margin-top: 35px;
+}
+.content p {
+	margin-top: 25px;
+    margin-right: 40%;
+    text-align: justify;
+	line-height: em;
+}
+.content h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.front {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-image: url(./Imagenes/imagen1.png);
+}
+
+.back {
+	
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url();
+    background-color: #000000;
+}
+.container-card:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+form {
+	text-align: left;
+}
+.back h1 {
+	margin: 0;
+}
+form label,
+form input {
+	display: block;
+}
+form input,
+form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #444;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+form label {
+	margin: 15px 0;
+}
+form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}*/
+
+/* */
+
 /* END - Acordeon en ABOUT*/
 
 
