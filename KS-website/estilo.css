@@ -155,6 +155,45 @@ body {
     position: relative;
   }
 
+  .seccion-div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-texto1 h2{
+    text-align: left;
+    padding-left: 9%;
+}
+
+.contenedor-texto1 p {
+    text-align: left;
+    padding-left: 9%;
+}
+
+.seccion-div1 img {
+    padding-left: 8%;
+}
+
+.seccion-div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-texto2 h2 { 
+    text-align: right;
+    padding-right: 8%;
+}
+
+.contenedor-texto2 p {
+    text-align: right;
+    padding-right: 8%;
+}
+
+.seccion-div2 img {
+    padding-right: 6%;
+}
 
 
 section {
@@ -229,8 +268,7 @@ color: rgb(172, 172, 172);
     color: rgb(172, 172, 172);
     cursor: pointer;
     margin-bottom: 2px;
-    transition: all 300ms ease;
-    
+    transition: all 300ms ease;    
 }
 .acordeon label:hover{
     background: #2e2e2e;
@@ -241,7 +279,7 @@ color: rgb(172, 172, 172);
     max-height: 0px;
     overflow: hidden;
     transition: all 300ms ease;
-
+    
     border-style:ridge;
     border-right: #000000;
     border-top: #000000;
@@ -260,10 +298,6 @@ color: rgb(172, 172, 172);
 
 
 
-body {
-	background-attachment: fixed;	
-	background-size: cover;
-	}
 #container{
 	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
 	background: rgba(255, 255, 255, 0.90);
@@ -290,7 +324,7 @@ body {
 #container .product-details h1{
 	display: inline-block;
 	position: relative;
-	font-size: 34px;
+	    font-size: 30px;
 	color: #000000;
 	margin: 0;
 	}
@@ -320,7 +354,7 @@ body {
 /* The most important information about the product */
 #container .product-details > p {
 	text-align: left;
-	font-size: 28x;
+	    font-size: 18px;
 	color: #4d4b4b;
 }
 
@@ -369,8 +403,8 @@ body {
 .controll{
 	text-align: center;
     position: absolute;
-	bottom: -40%;
-	left: 44%;
+	    bottom: 2px;
+	    left: 45%;
 }
 /* the Buttonn */
 .btnn {
@@ -401,16 +435,7 @@ button:hover{
     border-radius: 5px;
     border: 0;
 	margin: 0;
-   
 }
-.btnn .price {
-	transform: translateX(-10%); padding-right: 15px;
-}
-
-.btn .price {
-	transform: translateX(-10%); padding-right: 15px;
-}
-
 
 /* MENU BUY-ABOUT */
 
