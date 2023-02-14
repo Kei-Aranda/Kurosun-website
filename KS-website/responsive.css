@@ -1,0 +1,146 @@
+/* Extra small (600px and down) */
+@media only screen and (max-width: 600px) {
+    /*Logo*/
+    .menu
+    .logo img{
+        width: 250%;
+        animation-name: opening-logo;
+        animation-duration: 1.4s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    /*Nija*/
+    .secciones 
+    .texto{  
+        color: aliceblue; 
+        text-align: justify;
+        font-size: 90% ;
+        position: relative; 
+        padding: 10%;
+        margin-top: 50px;
+    }
+    h2{
+        font-size: 200px;
+        color: brown;
+    }
+    .imagen-container{
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    /*Seccion 1*/
+    .contenedor-texto1 p{
+        font-size: 90% ;
+    }
+    .contenedor-texto1 h2{
+        font-size: 25px ;
+    }
+    .seccion-div1 img{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    /*Seccion 2*/
+    .contenedor-texto2 p{
+        font-size: 90% ;
+    }
+    .contenedor-texto2 h2{
+        font-size: 25px ;
+    }
+    .seccion-div2 img{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    /*About*/
+    .about-text p{
+        font-size: 16px;
+        text-align: justify;
+    }
+    .about-text h2{
+        font-size: 32px ;
+    }
+    /*FAQ*/
+    .contenedor-acordeon h2{
+        font-size: 30px ;
+        text-align: left ;
+    }
+    .contenedor-acordeon p{
+       text-align: justify;
+    }
+    .acordeon label{
+        font-size: 17px ;
+        text-align: left
+    }
+    /*BUY*/
+    #container .product-details h1{
+        font-size: 25px ;
+    }
+    #container .product-details > p{
+        font-size: 15px;
+    }
+    .info{
+        font-size: 13px;
+        
+        transform: translateX(-0%);
+    }
+    .info h2{
+        font-size: 25px ;
+        color: #adadad;
+    }
+    .info ul li:hover{
+        transform: none;
+    }
+    .product-image {
+        background-image: none;
+        background-color: black;
+    }
+    .controll{
+        left: 30%;
+    }
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small (600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+
+/* Medium (768px and up) */
+@media only screen and (min-width: 768px) {
+.example 
+}
+
+
+/* Large (992px and up) */
+@media only screen and (min-width: 992px) {
+.example 
+}
+
+
+/* Extra large (1200px and up) */
+@media only screen and (min-width: 1200px) {
+.example 
+}
