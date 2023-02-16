@@ -317,119 +317,72 @@ color: rgb(172, 172, 172);
 .btn-acordeon{
     display: none;
 }
-/* END - Acordeon en ABOUT*/
 
 
 
-#container{
+
+
+/* BUY - NUEVO */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+/*Derecho(Blanco)*/
+  .item-left {
 	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
-	background: rgba(255, 255, 255, 0.90);
-	text-align: right;
-	border-radius: 15px;
-	overflow: hidden;
-	margin: 9em auto;
-	height: 500px;
-	width: 1000px;
- 
-}
-
-/* 	Product details  */
-.product-details {
-	position: relative;
-	text-align: center;
-	overflow: hidden;
+	background: rgba(255, 255, 255, 0.90);  color: #000000;
+	border-radius: 20px 0px 0px 20px;
+	overflow: hidden; 
+    flex: 50%;
+    position: relative;
 	padding: 20px;
-	height: 100%;
-	float: left;
-	width: 50%;
-    
-}
+    font-size: 20px;
+    /*sacar para responsive*/
+    margin: 5rem 0rem 5rem 5rem; 
+    height: 500px;
+    width: 500px;
+  }
+  .item-left p{
+    font-size: 18px; text-align: justify;
+  }
 
-/* 	Product Name */
-#container .product-details h1{
-	display: inline-block;
-	position: relative;
-	    font-size: 30px;
-	color: #000000;
-	margin: 0;
-	}
-
-#container .product-details h1:before{
-	position: absolute;
-	content: '';
-	right: -30%; 
-	top: 0%;
-	transform: translate(25px, -15px);
-	
-	display: inline-block;
-	background: #000000;
-	border-radius: 5px;
-	font-size: 14px;
-	padding: 5px;
-	color: #FFF;
-	margin: 0;
-	animation: chan-sh 6s ease infinite;
-}
-
-@keyframes chan-sh {
-	from  {content: 'free shipping';}
-	to  {content: 'New';}
-}
-
-/* The most important information about the product */
-#container .product-details > p {
-	text-align: left;
-	    font-size: 18px;
-	color: #4d4b4b;
-}
-
-/* product image  */
-.product-image {
-	transition: all 0.3s ease-out;
-    background-image: url(./Imagenes/imagen2.png) ;
-	display: inline-block;
-	position: relative;
+/*Izquierdo(Negro)*/
+  .item-right {
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+    color: #c8c8c8;
+	border-radius: 0px 20px 20px 0px;
 	overflow: hidden;
-	height: 100%;
-	float: right;
-	width: 50%;
-	display: inline-block;
+	flex: 50%;
+    text-align:left;
+    position: relative;
+	padding: 20px;
+    font-size: 18px;
+    /*sacar para responsive*/
+    margin: 5rem 5rem 5rem 0rem;
+    height: 500px;
+    width: 500px;
+  background-image: url(./Imagenes/imagen2-copy3.png);
+  background-size:cover;
+  background-position:center ;
     }
 
-.info {
-    background: rgba(27, 26, 26, 0.9);
-    transition: all 0.3s ease-out;
-    transform: translateX(-100%);
-    position: absolute;
-    line-height: 1.9;
-    text-align: left;
-    font-size: 120%;
+  .info ul li{transition: 0.5s ease;}
+  .info ul li:hover{transform: translateX(20px) scale(1.1);}
+  
 
-    color: #adadad;
-    height: 100%;
-    width: 100%;
-    left: 0px;
-    top: 0;
-    font-size: 15px;
-    padding: 6%;
-}
-
-.info h2 {text-align: center}
-.product-image:hover .info{transform: translateX(0);}
-
-.info ul li{transition: 0.3s ease;}
-.info ul li:hover{transform: translateX(25px) scale(1.1);}
-
-.product-image:hover img {transition: all 0.3s ease-out;}
-.product-image:hover img {transform: scale(1.2, 1.2);}
-
-
-/* controll */
+/* Boton Buy */
 .controll{
 	text-align: center;
     position: absolute;
 	    bottom: 2px;
-	    left: 45%;
+	    left: 40%;
 }
 /* the Buttonn */
 .btnn {
@@ -442,13 +395,11 @@ color: rgb(172, 172, 172);
 	padding: 0;
 	margin: 0;
 }
-
 button:hover{
     transform: translateY(-4px);
     background-color: #000000;
     color: #ffffff;
 }
-
 .btnn span {
 	display: inline-block;
     padding: 10px 20px;
@@ -461,6 +412,10 @@ button:hover{
     border: 0;
 	margin: 0;
 }
+
+
+
+
 
 /* MENU BUY-ABOUT */
 
@@ -532,3 +487,28 @@ button:hover{
 .imagen-container {
     width: 75%;
 }
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+  }
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
