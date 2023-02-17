@@ -8,15 +8,15 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type:proximity;
+    scroll-snap-type:mandatory;
     scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: black;
-    color: aliceblue;
+    color: rgb(172, 172, 172);
 }
 
 
@@ -98,16 +98,28 @@ body {
     animation-timing-function: ease-in-out;
 	}
 
+        .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+}   
+ 
+
+/*  MARCADO 15/2 PRUEBA
+
 .menu-mobile ul {
     margin: 0%;
     padding: 5%;
     display: flex;
     flex-direction: column;
 	column-width: 300%
-} 
+} */
 
 .menu-mobile ul li {
     text-align: left;
+    animation-name: opening-logo;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
 }
 
 .menu-mobile ul li a {
@@ -136,7 +148,7 @@ body {
     
 }
 
-.seccion1 {
+/*.seccion1 {
     height: 300px;
     display: flex;
     justify-content: space-evenly;
@@ -146,11 +158,11 @@ body {
     animation-name: opening-logo;
     animation-duration: 1.4s;
     animation-timing-function: ease-in-out;
-}
+}*/
+
 .secciones {
     padding: 1rem;
     height: 100vh;
-      
     scroll-snap-align: start;
     text-align: center;
     position: relative;
@@ -166,15 +178,18 @@ body {
 .contenedor-texto1 h2{
     text-align: left;
     padding-left: 9%;
+    color: rgb(172, 172, 172);
 }
 
 .contenedor-texto1 p {
     text-align: left;
     padding-left: 9%;
+    color: rgb(172, 172, 172);
 }
 
 .seccion-div1 img {
-    padding-left: 8%;
+         padding-left: 8%;
+
 }
 
 .seccion-div2 {
@@ -186,26 +201,29 @@ body {
 .contenedor-texto2 h2 { 
     text-align: right;
     padding-right: 8%;
+    color: rgb(172, 172, 172);
 }
 
 .contenedor-texto2 p {
     text-align: right;
     padding-right: 8%;
+    color: rgb(172, 172, 172);
 }
 
 .seccion-div2 img {
     padding-right: 6%;
+
 }
 
 
 
 section {
-    height: 700px;
+        height: 700px;
     display: flex;
     justify-content: space-evenly;
     padding: 0 40px ;
     align-items:center;
-    color: aliceblue;	
+    color: rgb(172, 172, 172);
     margin: 20px;
 }
 
@@ -236,6 +254,9 @@ section img {
         display: block;
     }
 }
+
+
+
 /*ABOUT*/
 
 #secciones-about{
@@ -245,82 +266,81 @@ section img {
 .about-text p{
 color: rgb(172, 172, 172);
     margin: 0%;
-    font-size: 20px;
+    font-size: 24px;
+    text-align: justify;
+}
+.about-text h2 {
+    color: rgb(172, 172, 172);
 }
 
-/*Acordeon FAQ n RETURN*/
-
-#secciones-faq {
+main{
+    padding-bottom: 20rem;
+    padding-top: 20rem ;
     scroll-snap-align: start;
-    position: relative;
-    margin-bottom: 70%;
-    scroll-snap-type: y mandatory;
-   
+}
+
+/*Acordeon FAQ n RETURN- MEJORADO */
+.collapsible {
+    background-color: #0f0f0f;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    
   }
 
-.contenedor-acordeon{
+  
+  .collapsible:hover {
+    background-color: #2e2e2e;
+    color: rgb(172, 172, 172);
+    
+  }
+  
+  .content {
+  transition: max-height 0.4s ease-out;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+  border-style:ridge;
+  border-right: #000000;
+  border-top: #000000;
+  border-bottom: #000000;
+  border-left-width: 1px;
+  padding: 0px 10px 0px 10px;
+  border-left-width: 1px;
+  }
+  
+  #secciones-faq {
+    margin-bottom: 0%;
+  }
+  
+  .contenedor-acordeon{
     width: 100%;
     max-width: 900px;
-    margin: auto;
-    margin-top:auto ;
+    /*margin: auto;
+    margin-top:auto ;*/
     margin-bottom: 100px;
     color: rgb(172, 172, 172);
-    scroll-snap-align: start;
-
-}
-.contenedor-acordeon h2{
+        padding: 0 40px 0 40px;
+  
+  }
+  .contenedor-acordeon h2{
     text-align: center;
     font-size: 30px;
     margin-bottom: 35px;
-}
-
-.contenedor-acordeon p{
+  }
+  .contenedor-acordeon p{
     font-size: 15px;
-}
+  }
 
-.acordeon{
-    background: #000000;
-    color: rgb(172, 172, 172);
-}
-.acordeon label{
-    display: block;
-    padding: 20px;
-    font-size: 20px;
-    background: #0f0f0f;
-    color: rgb(172, 172, 172);
-    cursor: pointer;
-    margin-bottom: 2px;
-    transition: all 300ms ease;
-    
-}
-.acordeon label:hover{
-    background: #2e2e2e;
-}
-.acordeon .contenido-acordeon{
-    padding: 0px;
-    margin: 20px 20px 20px 0px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 300ms ease;
-
-    border-style:ridge;
-    border-right: #000000;
-    border-top: #000000;
-    border-bottom: #000000;
-    border-left-width: 1px;
-    
-}
-.btn-acordeon:checked ~ .contenido-acordeon{
-    max-height: 600px;
-    padding: 15px 15px 20px 15px;
-}
-.btn-acordeon{
-    display: none;
-}
+/* END - Acordeon en ABOUT*/
 
 
-
-
+aside {
+    scroll-snap-align: start;
+}
 
 /* BUY - NUEVO */
 .flex-container {
@@ -334,6 +354,7 @@ color: rgb(172, 172, 172);
       flex-direction: column;
     }
   }
+
 /*Derecho(Blanco)*/
   .item-left {
 	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
@@ -364,6 +385,8 @@ color: rgb(172, 172, 172);
     position: relative;
 	padding: 20px;
     font-size: 18px;
+    
+    
     /*sacar para responsive*/
     margin: 5rem 5rem 5rem 0rem;
     height: 500px;
@@ -412,9 +435,6 @@ button:hover{
     border: 0;
 	margin: 0;
 }
-
-
-
 
 
 /* MENU BUY-ABOUT */
@@ -483,32 +503,79 @@ button:hover{
     top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: rgb(172, 172, 172);
 }
 .imagen-container {
     width: 75%;
 }
 
 
-.flex-container {
+footer {
+    scroll-snap-align: start;
+}
+
+/* FOOTER*/
+footer {
+    background-color:
+    black;
+    color: rgb(172, 172, 172);
+}
+.footer-content {
     display: flex;
-    flex-direction: row;
-    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 8px;
+    color: rgb(172, 172, 172);
+  }  
+
+  .footer-content p {
+    font-size: 18px;
+  }
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+   
+.socials li {
+    margin: 0 25px;
+  }
+
+.socials li a i {
+    width: 1.9rem;
+    justify-content: center;
+}
+
+.socials a {
+    color:rgb(206, 203, 203)
+}
+
+.socials a i {
+    font-size: 1.8rem;
+}
+
+.socials a:hover {
+    color: rgb(65, 62, 62);
+  }
+
+  .footer-bottom {
+    background: #100f0f;
+    padding: 10px 0;
     text-align: center;
   }
   
-  .flex-item-left {
-    background-color: #f1f1f1;
-    padding: 10px;
-    flex: 50%;
-  }
-  
-  .flex-item-right {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 50%;
-  }
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
+  .footer-bottom p {
+    font-size: 16px;
+    word-spacing: 2px;
+    color: rgb(172, 172, 172);
   }
