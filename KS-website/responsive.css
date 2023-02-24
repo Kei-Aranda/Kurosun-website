@@ -1,0 +1,1564 @@
+/* EXTRA SMALL MOBILE (360px) */
+
+@media only screen and (min-width: 360px) and (max-width:480px) {
+
+    /*Logo*/
+
+.menu{
+        text-align: center;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;    
+    }
+
+    .menu .logo img {
+        margin-top: -70px ;
+        width: 100px;
+        animation-name: opening-logo;
+        animation-duration: 1.4s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .logo h1 {
+      display: none;
+    }
+
+    .nav {
+        font-size: 15px;
+    
+    }
+
+    .menu-right {
+            margin-top: -70px;
+    }
+
+    .menu-left {
+        margin-top: -70px;
+    }
+
+    
+    /* NINJA */
+
+    .container h2 {
+        text-align: center; 
+        font-size: 20px;
+       }
+    
+       .container p {
+        text-align: justify;
+        font-size: 15px;
+       }
+    
+      .container > img {
+        width: 100%;  
+        padding-left: 1%;
+      }
+      .container{
+        margin-top: -80%;
+      }
+
+      /* SECCION 1 */
+
+      .seccion-div1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    flex-direction: column-reverse;
+    display: flex;
+        justify-content: center;
+        grid-gap: 1px;
+        overflow: hidden;
+            padding-bottom: 80px;
+            padding-top: 50px;
+      }
+    
+    .contenedor-texto1 p{
+        font-size: 15px ;
+        text-align: justify;
+        padding-left: 10px;
+    }
+    .contenedor-texto1 h2{
+        font-size: 20px ;
+        text-align: center;
+        padding-top: 10px ;
+    }
+
+    .contenedor-texto1 .bold {
+      text-align: center;
+      font-size: 23px;
+    }
+
+    .imagen2-copy1 {
+      width: 100%;
+      height: 100%;
+      margin-left: 0%;
+    }
+
+     /*  SECCION 2 */
+
+  .seccion-div2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-gap: 1px;
+    overflow: hidden; 
+          padding-top: 10px;
+          padding-bottom: 300px;
+  }  
+
+  .contenedor-texto2 p{
+    font-size: 15px ;
+    text-align: justify;
+         padding-left: 30px;
+}
+.contenedor-texto2 h2{
+    font-size: 20px ;
+    text-align: center;
+            padding-top: 0% ;
+    padding-left: 20px;
+}
+
+.contenedor-texto2 .bold {
+  text-align: center;
+      font-size: 23px;
+}
+
+.imagen-seccion2 {
+  width: 100%;
+  height: 100%;
+}
+
+    /*About*/
+    #secciones-about{
+        margin-top: -280px;
+    }
+    .about-text p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .about-text h2{
+        font-size: 20px ;
+    }
+
+    /*Acordeon FAQ n RETURN- MEJORADO */
+    .collapsible {
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+        margin-left: -35%;  
+        border-style: hidden;  
+        }
+        .content {
+        transition: max-height 0.4s ease-out;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 300ms ease;
+            margin-left: -35%;
+        }
+        #secciones-faq {
+        margin-bottom: 0%;
+        }
+        .contenedor-acordeon{
+        width: 100%;
+        min-width: 125%;
+        }
+  .contenedor-acordeon h2{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 35px;
+    margin-left: -20% ;
+    }
+    .contenedor-acordeon p{
+    font-size: 15px;
+    padding: 10px;
+    padding-right: 25%;
+    }
+  /* END - Acordeon en ABOUT*/
+
+
+
+    /*BUY - NUEVO */
+    /*Derecho-Arriba(Blanco)*/
+    .item-left {
+        border-radius: 20px 20px 20px 20px;
+        font-size: 15px;
+        margin: 5rem 5rem 5rem 5rem; 
+        height: 80%;
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 1%
+    }
+    .item-left p{
+        font-size: 15px; text-align: justify;
+    }
+
+    /*Izquierdo-Abajo(Negro)*/
+.item-right {
+    border-radius: 20px 20px 20px 20px;
+    text-align:left;
+    font-size: 15px;
+    margin: 5rem 5rem 5rem 5rem;
+    height: 80%;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 1%;
+}
+.item-right li {
+    font-size: 15px; text-align: justify;
+  }
+.info ul li:hover { transform: none;}
+
+
+
+/* Boton Buy */
+.controll{
+    margin-left: -25%;
+    margin-top: 10%;
+    margin-bottom: -200px;
+}
+.btnn span {
+    font-size: 110%;
+}
+/* FOOTER*/
+footer {
+    background-color: black;
+    color: rgb(172, 172, 172);
+    
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.footer-content h3 {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1rem;
+    margin-bottom: 8px;
+    color: rgb(172, 172, 172);
+    padding: 25px;
+  }  
+  .footer-content p {
+    font-size: 15px;
+  }
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials a i {
+    font-size: 1.2rem;
+  }
+
+
+.socials li {
+    margin: 0 13px;
+  }
+  .footer-bottom {
+    background: #100f0f;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .footer-bottom p {
+    font-size: 12px;
+    word-spacing: 2px;
+    color: rgb(172, 172, 172);
+  }
+
+}
+
+/* SMALL MOBILE (481px) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    
+    /* LOGO */
+    .menu{
+        text-align: center;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;    
+    }
+
+    .menu .logo img {
+        margin-top: -70px ;
+        width: 70%;
+        animation-name: opening-logo;
+        animation-duration: 1.4s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .logo h1 {
+      font-size: 65%;
+      font-family: 'Axiforma';
+    }
+
+    .nav {
+        font-size: 17px;
+    
+    }
+
+    .menu-right {
+            margin-top: -70px;
+    }
+
+    .menu-left {
+        margin-top: -70px;
+    }
+
+    
+    /* NINJA */
+
+    .container h2 {
+        text-align: center; 
+        font-size: 20px;
+       }
+    
+       .container p {
+        text-align: justify;
+        font-size: 15px;
+       }
+    
+      .container > img {
+        width: 100%;  
+        padding-left: 1%;
+      }
+      .container{
+        margin-top: -62%;
+      }
+
+      /* SECCION 1 */
+
+  .seccion-div1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    grid-gap: 1px;
+    overflow: hidden;
+    padding-bottom: 80px;
+    padding-top: 50px;
+      }
+    
+    .contenedor-texto1 p{
+        font-size: 15px ;
+        text-align: justify;
+        padding-left: 10px;
+    }
+    .contenedor-texto1 h2{
+        font-size: 20px ;
+        text-align: center;
+        padding-top: 10px ;
+    }
+
+    .contenedor-texto1 .bold {
+      text-align: center;
+          font-size: 23px;
+    }
+
+    .imagen2-copy1 {
+      width: 80%;
+      height: 80%;
+      margin-left: 12%;
+    }
+
+     /*  SECCION 2 */
+
+  .seccion-div2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-gap: 1px;
+    overflow: hidden; 
+    padding-top: 10px;
+    padding-bottom: 300px;
+  }  
+
+  .contenedor-texto2 p{
+    font-size: 15px ;
+    text-align: justify;
+         padding-left: 30px;
+}
+.contenedor-texto2 h2{
+    font-size: 20px ;
+    text-align: center;
+    padding-top: 0% ;
+    padding-left: 20px;
+}
+.contenedor-texto2 .bold {
+  text-align: center;
+  font-size: 23px;
+}
+.imagen-seccion2 {
+  width: 80%;
+  height: 100%;
+  margin-left: 12%;
+}
+
+    /*About*/
+    #secciones-about{
+        margin-top: -280px;
+    }
+    .about-text p{
+        font-size: 15px;
+        text-align: justify;
+        margin-bottom: 10%;
+    }
+    .about-text h2{
+        font-size: 20px ;
+    }
+/*Acordeon FAQ n RETURN */
+.collapsible {
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  margin-left: -35%;  
+  border-style: hidden;  
+  }
+  .content {
+  transition: max-height 0.4s ease-out;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+      margin-left: -35%;
+  }
+  #secciones-faq {
+  margin-bottom: 0%;
+  }
+  .contenedor-acordeon{
+  width: 100%;
+  min-width: 125%;
+  }
+.contenedor-acordeon h2{
+text-align: left;
+font-size: 20px;
+margin-bottom: 35px;
+margin-left: -20% ;
+}
+.contenedor-acordeon p{
+font-size: 15px;
+padding: 10px;
+padding-right: 25%;
+}
+/* END - Acordeon en ABOUT*/
+
+
+
+
+    /*BUY - NUEVO */
+    /*Derecho-Arriba(Blanco)*/
+    .item-left {
+        border-radius: 20px 20px 20px 20px;
+        font-size: 15px;
+        margin: 5rem 5rem 5rem 5rem; 
+        height: 90%;
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 1%
+    }
+    .item-left p{
+        font-size: 15px; text-align: justify;
+    }
+
+    /*Izquierdo-Abajo(Negro)*/
+.item-right {
+    border-radius: 20px 20px 20px 20px;
+    text-align:left;
+    font-size: 15px;
+    margin: 5rem 5rem 5rem 5rem;
+    height: 90%;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 1%;
+}
+.item-right li {
+    font-size: 15px; text-align: justify;
+  }
+.info ul li:hover { transform: none;}
+
+
+
+/* Boton Buy */
+.controll{
+    margin-left: -10%;
+    margin-top: 10%;
+    margin-bottom: -200px;
+}
+.btnn span {
+    font-size: 110%;
+}
+/* FOOTER*/
+footer {
+    background-color: black;
+    color: rgb(172, 172, 172);
+    
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.footer-content h3 {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1rem;
+    margin-bottom: 8px;
+    color: rgb(172, 172, 172);
+    padding: 25px;
+  }  
+  .footer-content p {
+    font-size: 15px;
+  }
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials a i {
+    font-size: 1.2rem;
+  }
+
+
+.socials li {
+    margin: 0 13px;
+  }
+  .footer-bottom {
+    background: #100f0f;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .footer-bottom p {
+    font-size: 12px;
+    word-spacing: 2px;
+    color: rgb(172, 172, 172);
+  }
+
+}
+
+/* MEDIUM 601px */
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+
+    /* LOGO */
+    .menu{
+        text-align: center;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;    
+    }
+
+    .menu .logo img {
+        margin-top: -70px ;
+        width: 70%;
+        animation-name: opening-logo;
+        animation-duration: 1.4s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .logo h1 {
+      font-size: 75%;
+      font-family: 'Axiforma';
+    }
+
+    .nav {
+        font-size: 19px;
+    
+    }
+
+    .menu-right {
+            margin-top: -70px;
+    }
+
+    .menu-left {
+        margin-top: -70px;
+    }
+
+    
+    /* NINJA */
+
+    .container h2 {
+        text-align: center; 
+        font-size: 27px;
+       }
+    
+       .container p {
+        text-align: justify;
+        font-size: 16px;
+       }
+    
+      .container > img {
+        width: 100%;  
+        padding-left: 1%;
+      }
+      .container{
+        margin-top: -45%;
+      }
+
+      /* SECCION 1 */
+
+      .seccion-div1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    flex-direction: column-reverse;
+    display: flex;
+        justify-content: center;
+        grid-gap: 1px;
+        overflow: hidden;
+            padding-bottom: 80px;
+            padding-top: 50px;
+      }
+    
+    .contenedor-texto1 p{
+        font-size: 16px ;
+        text-align: justify;
+        padding-left: 10px;
+    }
+    .contenedor-texto1 h2{
+        font-size: 27px ;
+        text-align: center;
+        padding-top: 10px ;
+    }
+
+    .contenedor-texto1 .bold {
+      text-align: center;
+          font-size: 27px;
+    }
+
+    .imagen2-copy1 {
+      width: 80%;
+      height: 80%;
+      margin-left: 12%;
+    }
+
+     /*  SECCION 2 */
+
+  .seccion-div2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-gap: 1px;
+    overflow: hidden; 
+          padding-top: 10px;
+          padding-bottom: 300px;
+  }  
+
+  .contenedor-texto2 p{
+    font-size: 16px ;
+    text-align: justify;
+         padding-left: 30px;
+}
+.contenedor-texto2 h2{
+    font-size: 27px ;
+    text-align: center;
+            padding-top: 0% ;
+    padding-left: 20px;
+}
+
+.contenedor-texto2 .bold {
+  text-align: center;
+      font-size: 27px;
+}
+
+.imagen-seccion2 {
+  width: 80%;
+  height: 100%;
+  margin-left: 12%;
+}
+
+    /*About*/
+    #secciones-about{
+        margin-top: -280px;
+    }
+    .about-text p{
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 12%;
+    }
+    .about-text h2{
+        font-size: 27px ;
+    }
+
+/*Acordeon FAQ n RETURN- MEJORADO */
+.collapsible {
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  margin-left: -35%;  
+  border-style: hidden;  
+  }
+  .content {
+  transition: max-height 0.4s ease-out;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+      margin-left: -35%;
+  }
+  #secciones-faq {
+  margin-bottom: 0%;
+  }
+  .contenedor-acordeon{
+  width: 100%;
+  min-width: 125%;
+  }
+.contenedor-acordeon h2{
+text-align: left;
+font-size: 27px;
+margin-bottom: 35px;
+margin-left: -20% ;
+}
+.contenedor-acordeon p{
+font-size: 16px;
+padding: 10px;
+padding-right: 25%;
+}
+/* END - Acordeon en ABOUT*/
+
+
+    /*BUY - NUEVO */
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*Derecho-Arriba(Blanco)*/
+ 
+
+    .item-left {
+        border-radius: 20px 20px 20px 20px;
+        font-size: 20px;
+        margin: 5rem 5rem 5rem 5rem; 
+        height: 100%;
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 1%
+    }
+    .item-left p{
+        font-size: 16px; text-align: justify;
+    }
+
+    /*Izquierdo-Abajo(Negro)*/
+.item-right {
+    border-radius: 20px 20px 20px 20px;
+    text-align:left;
+    font-size: 20px;
+    margin: 5rem 5rem 5rem 5rem;
+    height: 100%;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 1%;
+}
+.item-right li {
+    font-size: 16px; text-align: justify;
+  }
+
+/* Boton Buy */
+.controll{
+    margin-left: -10%;
+    margin-top: 15%;
+    margin-bottom: -300px;
+}
+.btnn span {
+    font-size: 120%;
+}
+/* FOOTER*/
+footer {
+    background-color: black;
+    color: rgb(172, 172, 172);
+    
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.footer-content h3 {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1rem;
+    margin-bottom: 8px;
+    color: rgb(172, 172, 172);
+    padding: 25px;
+  }  
+  .footer-content p {
+    font-size: 15px;
+  }
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials a i {
+    font-size: 1.2rem;
+  }
+
+
+.socials li {
+    margin: 0 13px;
+  }
+  .footer-bottom {
+    background: #100f0f;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .footer-bottom p {
+    font-size: 12px;
+    word-spacing: 2px;
+    color: rgb(172, 172, 172);
+  }    
+
+}
+
+/* MEDIUM 769px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {    
+ 
+    /* LOGO */
+    .menu {
+        padding-top: 20px;
+    }
+
+    .menu .logo img {
+        width: 500px
+    }
+
+    .logo h1 {
+      font-size: 100%;
+      font-family: 'Axiforma';
+    }
+
+    /* NINJA */
+
+    .container h2 {
+      font-size: 27px;
+    }
+
+   .container p {
+    text-align: center;
+    font-size: 20px;
+   }
+
+   .container{
+    margin-top: -20%;
+  }
+  
+    /* SECCION 1 */
+
+.seccion-div1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column-reverse;
+  display: flex;
+  justify-content: center;
+  grid-gap: 1px;
+  overflow: hidden;
+  padding-bottom: 80px;
+  padding-top: 50px;
+    }
+  
+  .contenedor-texto1 p{
+      font-size: 20px ;
+      text-align: justify;
+      padding-left: 10px;
+  }
+  .contenedor-texto1 h2{
+      font-size: 27px ;
+      text-align: center;
+      padding-top: 10px ;
+  }
+
+  .contenedor-texto1 .bold {
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .imagen2-copy1 {
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+  }
+
+   /*  SECCION 2 */
+
+.seccion-div2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  grid-gap: 1px;
+  overflow: hidden; 
+  padding-top: 10px;
+  padding-bottom: 300px;
+}  
+
+.contenedor-texto2 p{
+  font-size: 20px ;
+  text-align: justify;
+  padding-left: 30px;
+}
+.contenedor-texto2 h2{
+  font-size: 27px ;
+  text-align: center;
+  padding-top: 0% ;
+  padding-left: 20px;
+}
+
+.contenedor-texto2 .bold {
+text-align: center;
+font-size: 27px;
+}
+
+.imagen-seccion2 {
+width: 70%;
+height: 100%;
+margin-left: 15%;
+}
+
+
+  /* ABOUT */
+
+  .about-text p {
+    font-size: 20px;
+    margin-bottom: 12%;
+  }
+
+  .about-text h2 {
+    margin-top: -30%;
+    font-size: 27px;
+  }
+
+ /*Acordeon FAQ n RETURN- MEJORADO */
+.collapsible {
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  margin-left: -35%;  
+  border-style: hidden;  
+  }
+  .content {
+  transition: max-height 0.4s ease-out;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+      margin-left: -35%;
+  }
+  #secciones-faq {
+  margin-bottom: 0%;
+  }
+  .contenedor-acordeon{
+  width: 100%;
+  min-width: 125%;
+  }
+.contenedor-acordeon h2{
+text-align: left;
+font-size: 27px;
+margin-bottom: 35px;
+margin-left: -20% ;
+}
+.contenedor-acordeon p{
+font-size: 16px;
+padding: 10px;
+padding-right: 25%;
+}
+/* END - Acordeon en ABOUT*/
+
+
+    /*BUY - NUEVO */
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*Derecho-Arriba(Blanco)*/
+ 
+
+    .item-left {
+        border-radius: 20px 20px 20px 20px;
+        font-size: 20px;
+        margin: 5rem 5rem 5rem 5rem; 
+        height: 80%;
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 8%
+    }
+    .item-left p{
+        font-size: 16px; text-align: justify;
+    }
+
+    /*Izquierdo-Abajo(Negro)*/
+.item-right {
+    border-radius: 20px 20px 20px 20px;
+    text-align:left;
+    font-size: 20px;
+    margin: 5rem 5rem 5rem 5rem;
+    height: 80%;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 8%;
+}
+.item-right li {
+    font-size: 16px; text-align: justify;
+  }
+
+/* Boton Buy */
+.controll{
+    margin-left: -10%;
+    margin-top: 15%;
+    margin-bottom: -100px;
+}
+.btnn span {
+    font-size: 120%;
+}
+
+
+    /* FOOTER */
+
+    .footer-content {
+        margin-top: -15%
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .socials a i {
+        font-size: 40px;
+    }
+
+    .socials li {
+        margin: 0 35px;
+      }
+
+}
+
+
+/* LARGE (1025px and up) */
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+
+    
+    /* LOGO */
+    .menu {
+        padding-top: 20px;
+    }
+
+    .menu .logo img {
+        width: 600px
+    }
+
+    .logo h1 {
+      font-size:100% ;
+      font-family: 'Axiforma';
+    }
+    
+    /* NINJA */
+
+   .container p {
+    text-align: center;
+    font-size: 20px;
+   }
+
+   .container{
+    margin-top: -20%;
+  }
+  
+   /* SECCION 1 */
+
+   .contenedor-texto1 p{
+    font-size: 20px ;
+    text-align: left;
+    padding-left: 10px;
+}
+
+    .imagen2-copy1 {
+    width: 400px;
+    height: 400px;
+    margin-left: 13%;
+        margin-top: 130px ;
+  }
+
+  /* SECCION 2 */
+
+  .contenedor-texto2 h2{
+    padding-right: 10px;
+  }
+
+  .contenedor-texto2 p{
+    font-size: 20px ;
+    text-align: justify;
+    text-align: right;
+    padding-right: 10px;
+}
+.imagen-seccion2 {
+    width: 400px;
+    height: 400px;
+          padding-top: 130px;
+  }
+
+  /* ABOUT */
+
+  .about-text p {
+    font-size: 20px;
+    margin-bottom: 12%;
+  }
+
+  .about-text h2 {
+    margin-top: 10%;
+  }
+
+   /*Acordeon FAQ n RETURN- MEJORADO */
+   .collapsible {
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-left: -5%;  
+    border-style: hidden;  
+    }
+    .content {
+    transition: max-height 0.4s ease-out;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+        margin-left: -5%;
+        max-width: 100%;
+    }
+    #secciones-faq {
+    margin-bottom: 0%;
+    margin-left: 2%;
+    }
+    .contenedor-acordeon{
+    width: 100%;
+    max-width: 800%;
+    }
+.contenedor-acordeon h2{
+text-align: left;
+font-size: 27px;
+margin-bottom: 35px;
+}
+.contenedor-acordeon p{
+font-size: 16px;
+padding: 7px 0px 7px ;
+}
+/* END - Acordeon en ABOUT*/
+
+
+  /* BUY */
+
+  .flex-container {
+    margin-bottom: -17%;
+}
+
+/*Derecho(Blanco)*/
+.item-left {
+    font-size: 20px;
+    height: 500px;
+    width: 500px;
+}
+
+.item-left p{
+  font-size: 14px; 
+}
+
+.item-right li {
+  font-size: 16px;
+}
+
+.item-right  {
+  font-size: 20px;
+  height: 500px;
+  width: 500px;
+}
+
+.info ul li:hover {
+    transform: none;
+}
+
+/* Boton Buy */
+  .controll{
+  text-align: center;
+    padding-left: 40px;
+    margin-top: 15%;
+  }
+
+  .btnn span {
+      font-size: 1.4rem;
+  }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        margin-top: -15%
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .socials a i {
+        font-size: 40px;
+    }
+
+    .socials li {
+        margin: 0 35px;
+      }
+
+
+
+}
+
+/* LARGE MEDIUM (1280px)  */
+@media only screen and (min-width: 1280px) and (max-width: 1365px) { 
+ 
+    /* LOGO */
+    .menu {
+      padding-top: 20px;
+  }
+
+  .menu .logo img {
+      width: 600px
+  }
+
+  .logo h1 {
+    font-size:100% ;
+    font-family: 'Axiforma';
+  }
+
+  /* NINJA */
+
+ .container p {
+  text-align: center;
+  font-size: 20px;
+ }
+
+ .container{
+  margin-top: -20%;
+}
+
+ /* SECCION 1 */
+
+ .contenedor-texto1 p{
+  font-size: 20px ;
+  text-align: left;
+  padding-left: 10px;
+}
+
+  .imagen2-copy1 {
+  width: 100%;
+  height: 80%;
+  margin-left: 13%;
+        margin-top: 80px;
+}
+
+/* SECCION 2 */
+
+.contenedor-texto2 h2{
+  padding-right: 10px;
+}
+
+.contenedor-texto2 p{
+  font-size: 20px ;
+  text-align: justify;
+  text-align: right;
+  padding-right: 10px;
+}
+.imagen-seccion2 {
+  width: 90%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+/* ABOUT */
+
+.about-text p {
+  font-size: 20px;
+  margin-bottom: 12%;
+}
+
+.about-text h2 {
+  margin-top: 10%;
+}
+
+#secciones-faq {
+  margin-left: 12%;
+}
+
+ /*Acordeon FAQ n RETURN */
+ .collapsible {
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  margin-left: -5%;  
+  border-style: hidden;  
+  }
+  .content {
+  transition: max-height 0.4s ease-out;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+      margin-left: -5%;
+      max-width: 100%;
+  }
+  #secciones-faq {
+  margin-bottom: 0%;
+  margin-left: 3%;
+  }
+  .contenedor-acordeon{
+  width: 100%;
+  max-width: 800%;
+  }
+.contenedor-acordeon h2{
+text-align: left;
+font-size: 27px;
+margin-bottom: 35px;
+}
+.contenedor-acordeon p{
+font-size: 16px;
+padding: 7px 0px 7px ;
+}
+/* END - Acordeon en ABOUT*/
+
+
+
+/* BUY */
+
+.flex-container {
+    margin-bottom: -17%;
+}
+/*Derecho(Blanco)*/
+.item-left {
+    font-size: 20px;
+}
+
+.item-left p{
+  font-size: 16px; 
+}
+
+.item-right li {
+  font-size: 15px;
+}
+
+.item-right  {
+  font-size: 20px;
+}
+
+/* Boton Buy */
+  .controll{
+  text-align: center;
+    padding-left: 40px;
+    margin-top: 15%;
+  }
+
+  .btnn span {
+      font-size: 1.4rem;
+  }
+
+
+  /* FOOTER */
+
+  .footer-content {
+      margin-top: -15%
+  }
+
+  .footer-content h3 {
+      font-size: 1.5rem;
+  }
+
+  .footer-content p {
+      font-size: 15px;
+  }
+
+  .footer-bottom p {
+      font-size: 13px;
+  }
+
+  .socials a i {
+      font-size: 40px;
+  }
+
+  .socials li {
+      margin: 0 35px;
+    }
+}
+
+
+
+/* LARGE - NOTEBOOK (1366px) */
+@media only screen and (min-width: 1366px) and (max-width:1700px) {
+ 
+    /* LOGO */
+    .menu {
+        padding-top: 20px;
+    }
+
+    .menu .logo img {
+        width: 600px
+    }
+
+    .logo h1 {
+      font-size: 130%;
+    }
+
+    /* NINJA */
+
+   .container p {
+    text-align: center;
+    font-size: 20px;
+   }
+
+   .container{
+    margin-top: -20%;
+  }
+  
+   /* SECCION 1 */
+
+   .contenedor-texto1 p{
+    font-size: 20px ;
+    text-align: left;
+    padding-left: 10px;
+}
+
+    .imagen2-copy1 {
+    width: 100%;
+    height: 100%;
+    margin-left: 13%;
+    margin-top: 35px ;
+  }
+
+  /* SECCION 2 */
+
+  .contenedor-texto2 h2{
+    padding-right: 10px;
+  }
+
+  .contenedor-texto2 p{
+    font-size: 20px ;
+    text-align: justify;
+    text-align: right;
+    padding-right: 10px;
+}
+.imagen-seccion2 {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+  }
+
+  /* ABOUT */
+
+  .about-text p {
+    font-size: 20px;
+    margin-bottom: 12%;
+  }
+
+  .about-text h2 {
+    margin-top: 10%;
+  }
+
+  #secciones-faq {
+    margin-left: 12%;
+  }
+
+  /* BUY */
+
+  .flex-container {
+      margin-bottom: -17%;
+  }
+  /*Derecho(Blanco)*/
+.item-left {
+      font-size: 20px;
+}
+
+.item-left p{
+    font-size: 16px; 
+}
+
+.item-right li {
+    font-size: 16px;
+}
+
+.item-right  {
+    font-size: 20px;
+}
+
+  /* Boton Buy */
+    .controll{
+    text-align: center;
+      padding-left: 40px;
+      margin-top: 15%;
+    }
+
+    .btnn span {
+        font-size: 1.4rem;
+    }
+ 
+
+    /* FOOTER */
+
+    .footer-content {
+        margin-top: -15%
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .socials a i {
+        font-size: 40px;
+    }
+
+    .socials li {
+        margin: 0 35px;
+      }
+
+}
